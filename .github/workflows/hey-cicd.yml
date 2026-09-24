@@ -1,6 +1,10 @@
 name: Hello GitHub Actions
 on:
-  workflow_dispatch:
+  # workflow_dispatch:
+    push:
+      branches:
+        - main
+        - feature/*
 jobs:
   hello:
     runs-on: ubuntu-latest
@@ -20,3 +24,4 @@ jobs:
         run: date
       - name: Show operating system
         run: uname -a
+

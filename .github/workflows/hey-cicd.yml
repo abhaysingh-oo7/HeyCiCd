@@ -11,14 +11,7 @@ jobs:
         run: date
       - name: Show operating system
         run: uname -a
-
-
-
-name: Hello GitHub Actions
-on:
-  workflow_dispatch:
-jobs:
-  gello:
+  jello:
     runs-on: ubuntu-latest
     steps:
       - name: Print message
